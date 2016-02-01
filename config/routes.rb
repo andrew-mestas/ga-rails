@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get '/' => 'main#index'
 
   post '/results' => 'main#results'
+  get '/results' => 'main#results'
+
 
   get '/signin' => 'sessions#new'
   post '/signin' => 'sessions#create'
